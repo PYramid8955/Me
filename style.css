@@ -4,6 +4,7 @@ html {
 
 body {
   background: black;
+  margin: 0;
 }
 
 body::before {
@@ -14,7 +15,7 @@ body::before {
   position: absolute;
   top: 100%;
   left: calc(100% - .05rem);
-  animation: rightGlowing 6s linear infinite; /*rm infinite in the end, or set a delay*/
+  animation: rightGlowing 6s 2s linear infinite; /*rm infinite in the end, or set a delay*/
   box-shadow: 0 0 10px 1px white;
 }
 
@@ -59,7 +60,7 @@ body::after {
   position: absolute;
   bottom: 100%;
   right: calc(100% - .05rem);
-  animation: leftGlowing 6s linear infinite; /*rm infinite in the end, or set a delay*/
+  animation: leftGlowing 6s 2s linear infinite; /*rm infinite in the end, or set a delay*/
   box-shadow: 0 0 10px 1px white;
 }
 
