@@ -53,10 +53,12 @@ body::before,
   53% {
     top: 100%;
     height: 0;
+    box-shadow: none;
   }
   100% {
     top: 100%;
     height: 0;
+    box-shadow: none;
   }
 }
 
@@ -100,16 +102,18 @@ body::after,
   53% {
     bottom: 100%;
     height: 0;
+    box-shadow: none;
   }
   100% {
     bottom: 100%;
     height: 0;
+    box-shadow: none;
   }
 }
 
 #testglowing {
   width: 50%;
   height: 50%;
-  background: rgb(2, 2, 12);
+  background: rgb(3 3 22);
   position: relative;
 }
