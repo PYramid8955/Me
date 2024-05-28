@@ -6,15 +6,12 @@ body {
   background: black;
   margin: 0;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100vh;
+  color: white;
 }
 
-body::before,
-#testglowing::before {
+body::before {
   content: '';
   height: 0;
   background: white;
@@ -23,8 +20,8 @@ body::before,
   transform: translate(-100%, -100%);
   top: 100%;
   left: 100%;
-  animation: rightGlowing 6s 2s linear infinite; /*rm infinite in the end, or set a delay*/
-  box-shadow: 0 0 10px 1px white;
+  animation: rightGlowing 6s 2s linear infinite;
+  /*rm infinite in the end, or set a delay*/
 }
 
 @keyframes rightGlowing {
@@ -33,28 +30,37 @@ body::before,
     width: 0;
     height: .05rem;
     top: .1rem;
+    box-shadow: 0 0 10px 1px white;
   }
+
   13% {
     left: calc(50% - 2rem);
     width: 4rem;
     height: .05rem;
     top: .1rem;
+    box-shadow: 0 0 10px 1px white;
   }
+
   27% {
     left: 100%;
     width: .05rem;
     height: .05rem;
     top: .1rem;
+    box-shadow: 0 0 10px 1px white;
   }
+
   40% {
     top: calc(50% - 2rem);
     height: 4rem;
+    box-shadow: 0 0 10px 1px white;
   }
+
   53% {
     top: 100%;
     height: 0;
     box-shadow: none;
   }
+
   100% {
     top: 100%;
     height: 0;
@@ -62,8 +68,7 @@ body::before,
   }
 }
 
-body::after,
-#testglowing::after {
+body::after {
   content: '';
   height: 0;
   background: white;
@@ -71,8 +76,8 @@ body::after,
   position: absolute;
   bottom: 100%;
   right: 100%;
-  animation: leftGlowing 6s 2s linear infinite; /*rm infinite in the end, or set a delay*/
-  box-shadow: 0 0 10px 1px white;
+  animation: leftGlowing 6s 2s linear infinite;
+  /*rm infinite in the end, or set a delay*/
   transform: translate(100%, 100%);
 }
 
@@ -82,28 +87,37 @@ body::after,
     width: 0;
     height: .05rem;
     bottom: .1rem;
+    box-shadow: 0 0 10px 1px white;
   }
+
   13% {
     right: calc(50% - 2rem);
     width: 4rem;
     height: .05rem;
     bottom: .1rem;
+    box-shadow: 0 0 10px 1px white;
   }
+
   27% {
     right: 100%;
     width: .05rem;
     height: .05rem;
     bottom: .1rem;
+    box-shadow: 0 0 10px 1px white;
   }
+
   40% {
     bottom: calc(50% - 2rem);
     height: 4rem;
+    box-shadow: 0 0 10px 1px white;
   }
+
   53% {
     bottom: 100%;
     height: 0;
     box-shadow: none;
   }
+
   100% {
     bottom: 100%;
     height: 0;
@@ -111,9 +125,66 @@ body::after,
   }
 }
 
-#testglowing {
-  width: 50%;
-  height: 50%;
-  background: rgb(3 3 22);
-  position: relative;
+.help {
+  cursor: help;
+  color: #555;
+}
+
+#sect1,
+#sect2 {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+}
+
+#sect1 {
+  width: 40%;
+}
+
+#sect2 {
+  right: 0;
+  width: 60%;
+}
+
+#intro {
+  width: 65%;
+}
+
+#intro>h1 {
+  text-align: center;
+}
+
+#intro>p {
+  text-indent: 2rem;
+  text-align: justify;
+}
+
+#faqbtn {
+  text-decoration: underline;
+  color: #333;
+}
+
+#socialbar {
+  width: 65%;
+  height: 10px;
+  background: #111;
+}
+
+#intro>h1 {
+  color: black;
+  text-shadow: 0 0 20px yellow;
+  /* just a concept */
+}
+
+#sideParallelogram {
+  width: 82vh;
+  height: 66%;
+  transform: rotate(90deg) skew(10deg);
+  background: radial-gradient(circle at 60% 50%, rgb(14, 72, 222) 5.2%, rgb(3, 22, 65) 75.3%);
+  position: absolute;
 }
