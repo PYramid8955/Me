@@ -125,11 +125,6 @@ body::after {
   }
 }
 
-.help {
-  cursor: help;
-  color: #555;
-}
-
 #sect1,
 #sect2 {
   height: 100vh;
@@ -139,52 +134,56 @@ body::after {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  align-content: space-evenly;
+  align-content: center;
 }
 
 #sect1 {
-  width: 40%;
+  width: 50%;
 }
 
 #sect2 {
   right: 0;
-  width: 60%;
+  width: 50%;
 }
 
-#intro {
-  width: 65%;
+.logo {
+  width: 50%;
+  margin: 0 25%;
+  opacity: .6;
 }
 
-#intro>h1 {
-  text-align: center;
+#sect1>h2 {
+  font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #4e4e4e;
 }
 
-#intro>p {
-  text-indent: 2rem;
-  text-align: justify;
+#bookcontainer {
+  width: 31rem;
+  height: 42rem;
+  z-index: 1;
 }
 
-#faqbtn {
-  text-decoration: underline;
-  color: #333;
+#bookcover {
+  width: 100%;
+  height: 100%;
+  background: #151557;
+  border: 0;
+  border-radius: 0 1rem 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
-#socialbar {
-  width: 65%;
-  height: 10px;
-  background: #111;
-}
-
-#intro>h1 {
-  color: black;
-  text-shadow: 0 0 20px yellow;
-  /* just a concept */
-}
-
-#sideParallelogram {
-  width: 82vh;
-  height: 66%;
-  transform: rotate(90deg) skew(10deg);
-  background: radial-gradient(circle at 60% 50%, rgb(14, 72, 222) 5.2%, rgb(3, 22, 65) 75.3%);
-  position: absolute;
+#bookcover>h1 {
+  font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #ababab;
+  margin: 0 auto
 }
